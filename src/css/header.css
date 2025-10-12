@@ -9,8 +9,9 @@
 
   .page-header {
     background-color: var(--color-white);
-    position: sticky;
+    position: fixed;
     top: 0;
+    width: 100%;
   }
 
   .hide {
