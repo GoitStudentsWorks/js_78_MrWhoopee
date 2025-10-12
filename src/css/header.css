@@ -7,6 +7,12 @@
     padding: 13px 20px;
   }
 
+  .page-header {
+    background-color: var(--color-white);
+    position: sticky;
+    top: 0;
+  }
+
   .hide {
     display: none;
   }
