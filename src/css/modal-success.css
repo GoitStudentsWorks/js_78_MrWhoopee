@@ -12,6 +12,7 @@
 
 .backdrop-success.is-open-now {
   opacity: 1;
+  pointer-events: auto;
 }
 
 .modal-success {
@@ -47,7 +48,6 @@
   background: none;
   padding: 0;
   stroke: var(--color-scheme-1-text);
-  pointer-events: auto;
 }
 
 .modal-success-title {
@@ -72,7 +72,6 @@
 .modal-success .big-blue-btn {
   min-width: 295px;
   margin: 16px auto 0;
-  pointer-events: auto;
 
   @media screen and (min-width: 768px) {
     display: flex;
