@@ -6,25 +6,59 @@
       </svg>
     </button>
     <picture>
+      <!-- Desktop -->
       <source
         srcset="
-          ./img/modal-saccess-images/modal-success-desktop.jpg    1x,
-          ./img/modal-saccess-images/modal-success-desktop@2x.jpg 2x
+          ./img/modal-success/webp/modal-success-desktop.webp    1x,
+          ./img/modal-success/webp/modal-success-desktop@2x.webp 2x
         "
         media="(min-width: 1440px)"
+        type="image/webp"
+        width="640"
       />
+
       <source
         srcset="
-          ./img/modal-saccess-images/modal-success-tablet.jpg    1x,
-          ./img/modal-saccess-images/modal-success-tablet@2x.jpg 2x
+          ./img/modal-success/jpg/modal-success-desktop.jpg    1x,
+          ./img/modal-success/jpg/modal-success-desktop@2x.jpg 2x
+        "
+        media="(min-width: 1440px)"
+        width="640"
+      />
+      <!-- Tablet -->
+      <source
+        srcset="
+          ./img/modal-success/webp/modal-success-tablet.webp    1x,
+          ./img/modal-success/webp/modal-success-tablet@2x.webp 2x
         "
         media="(min-width: 768px)"
+        type="image/webp"
+        width="576"
+      />
+
+      <source
+        srcset="
+          ./img/modal-success/jpg/modal-success-tablet.jpg    1x,
+          ./img/modal-success/jpg/modal-success-tablet@2x.jpg 2x
+        "
+        media="(min-width: 768px)"
+        width="576"
+      />
+      <!-- Mobile -->
+      <source
+        srcset="
+          ./img/modal-success/webp/modal-success-mob.webp    1x,
+          ./img/modal-success/webp/modal-success-mob@2x.webp 2x
+        "
+        media="(max-width: 767px)"
+        type="image/webp"
+        width="295"
       />
       <img
-        srcset="./img/modal-saccess-images/modal-success-mob@2x.jpg 2x"
-        src="./img/modal-saccess-images/modal-success-mob.jpg"
+        srcset="./img/modal-success/jpg/modal-success-mob@2x.jpg 2x"
+        src="./img/modal-success/jpg/modal-success-mob.jpg"
         alt="A close-up,a person smiling warmly at their laptop screen"
-        class="about-image"
+        width="295"
       />
     </picture>
     <h2 class="modal-success-title">Success! You're registered.</h2>
