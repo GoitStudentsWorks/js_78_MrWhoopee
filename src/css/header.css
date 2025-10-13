@@ -40,7 +40,7 @@
 
 @media screen and (min-width: 1440px) {
   .page-header .container {
-    padding: 17px 64px;
+    padding: 0 64px;
   }
 
   .header-nav {
