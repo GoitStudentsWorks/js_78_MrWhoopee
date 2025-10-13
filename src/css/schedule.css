@@ -89,7 +89,7 @@
   }
 }
 
-.schedule .big-blue-btn {
+.schedule .blue-link-button {
   @media screen and (min-width: 768px) {
     max-width: 192px;
     margin: 0 auto;
