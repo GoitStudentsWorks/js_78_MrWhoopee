@@ -8,6 +8,13 @@
     padding-bottom: 13px;
   }
 
+  .page-header {
+    background-color: var(--color-white);
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
   .hide {
     display: none;
   }
