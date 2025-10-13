@@ -25,21 +25,7 @@
   justify-content: center;
   align-items: center;
   padding: 10px 24px;
-
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.hero-button:active {
-  background: var(--color-governor-bay-lighter);
-  color: var(--color-scheme-1-text);
-}
-
-.hero-button:disabled {
-  background: var(--color-governor-bay);
-  opacity: 0.3;
-  color: var(--color-white);
+  max-width: 193px;
 }
 
 @media only screen and (min-width: 768px) {
