@@ -1,7 +1,5 @@
-<link rel="stylesheet" href="../css/styles.css" />
-
 <section class="about-section" id="about">
-  <div class="container about">
+  <div class="container">
     <div class="about-text">
       <svg class="about-icon" width="48" height="48">
         <use href="./img/icons.svg#icon-verified"></use>
@@ -17,29 +15,61 @@
         educational technologies that can enhance their practices.
       </p>
     </div>
-    <div class="about-image-wrapper">
-      <picture>
-        <source
-          srcset="
-            ./img/about-image/image-about-desktop.jpg    1x,
-            ./img/about-image/image-about-desktop@2x.jpg 2x
-          "
-          media="(min-width: 1440px)"
-        />
-        <source
-          srcset="
-            ./img/about-image/image-about-tablet.jpg    1x,
-            ./img/about-image/image-about-tablet@2x.jpg 2x
-          "
-          media="(min-width: 768px)"
-        />
-        <img
-          srcset="./img/about-image/image-about-mob@2x.jpg 2x"
-          src="./img/about-image/image-about-mob.jpg"
-          alt="Two smiling educators looking at a laptop"
-          class="about-image"
-        />
-      </picture>
-    </div>
+    <picture>
+      <!-- Desktop -->
+      <source
+        srcset="
+          ./img/about-image/webp/image-about-desktop.webp   1x,
+          ./img/about-image/webp/mage-about-desktop@2x.webp 2x
+        "
+        media="(min-width: 1440px)"
+        type="image/webp"
+        width="640"
+      />
+
+      <source
+        srcset="
+          ./img/about-image/jpg/image-about-desktop.jpg    1x,
+          ./img/about-image/jpg/image-about-desktop@2x.jpg 2x
+        "
+        media="(min-width: 1440px)"
+        width="640"
+      />
+      <!-- Tablet -->
+      <source
+        srcset="
+          ./img/about-image/webp/image-about-tablet.webp    1x,
+          ./img/about-image/webp/image-about-tablet@2x.webp 2x
+        "
+        media="(min-width: 768px)"
+        width="340"
+      />
+
+      <source
+        srcset="
+          ./img/about-image/jpg/image-about-tablet.jpg    1x,
+          ./img/about-image/jpg/image-about-tablet@2x.jpg 2x
+        "
+        media="(min-width: 768px)"
+        width="340"
+      />
+      <!-- Mobile -->
+      <source
+        srcset="
+          ./img/about-image/webp/image-about-mob.webp    1x,
+          ./img/about-image/webp/image-about-mob@2x.webp 2x
+        "
+        media="(max-width: 767px)"
+        type="image/webp"
+        width="335"
+      />
+
+      <img
+        srcset="./img/about-image/jpg/image-about-mob@2x.jpg 2x"
+        src="./img/about-image/jpg/image-about-mob.jpg"
+        alt="Two smiling educators looking at a laptop"
+        width="335"
+      />
+    </picture>
   </div>
 </section>

@@ -54,6 +54,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -125,7 +129,8 @@ button {
 }
 
 .big-blue-btn {
-  padding: 10px 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
   width: 100%;
   font-size: 16px;
   font-weight: 500;
@@ -154,6 +159,32 @@ button {
   background-color: var(--color-governor-bay);
   opacity: 0.3;
   cursor: not-allowed;
+}
+
+.blue-link-button {
+  display: block;
+  text-align: center;
+
+  border-radius: 6px;
+  border: 1px solid var(--color-governor-bay);
+  background: var(--color-governor-bay);
+  color: var(--color-white);
+
+  margin: auto 0;
+  padding: 10px 24px;
+  min-width: 192px;
+
+  transition: all 250ms linear;
+}
+
+.blue-link-button:hover,
+.blue-link-button:focus {
+  background: transparent;
+  color: var(--color-scheme-1-text);
+}
+
+.blue-link-button:active {
+  background: var(--color-governor-bay-lighter);
 }
 
 .visually-hidden {

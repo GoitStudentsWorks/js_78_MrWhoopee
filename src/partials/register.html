@@ -23,6 +23,8 @@
                 id="user-name"
                 name="user-name"
                 placeholder="Enter your full name"
+                pattern="^[A-Za-z]+(?:\s+[A-Za-z]+)+$"
+                title="Введіть своє повне ім'я (ім'я та прізвище латиницею)"
                 required
               />
             </div>
@@ -39,43 +41,71 @@
                 name="user-email"
                 placeholder="Enter your email address"
                 required
-                pattern=""
-                title=""
+                pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
               />
             </div>
           </div>
-          <button class="register-btn big-blue-btn" type="submit">
-            Register Now
-          </button>
+          <button class="big-blue-btn" type="submit">Register Now</button>
         </div>
       </form>
     </div>
 
-    <div class="register-img-wrapper">
-      <picture>
-        <source
-          srcset="
-            ./img/register/register-jpeg/register-desktop.jpg    1x,
-            ./img/register/register-jpeg/register-desktop@2x.jpg 2x
-          "
-          media="(min-width: 1160px)"
-        />
-        <source
-          srcset="
-            ./img/register/register-jpeg/register-tablet.jpg    1x,
-            ./img/register/register-jpeg/register-tablet@2x.jpg 2x
-          "
-          media="(min-width: 768px)"
-        />
-        <img
-          class="register-img"
-          width="335"
-          height="259"
-          srcset="./img/register/register-jpeg/register-mobile@2x.jpg 2x"
-          src="./img/register/register-jpeg/register-mobile.jpg"
-          alt="register section"
-        />
-      </picture>
-    </div>
+    <picture>
+      <!-- Desktop -->
+      <source
+        srcset="
+          ./img/register/webp/register-desktop.webp    1x,
+          ./img/register/webp/register-desktop@2x.webp 2x
+        "
+        media="(min-width: 1440px)"
+        type="image/webp"
+        width="640"
+      />
+
+      <source
+        srcset="
+          ./img/register/register-jpeg/register-desktop.jpg    1x,
+          ./img/register/register-jpeg/register-desktop@2x.jpg 2x
+        "
+        media="(min-width: 1440px)"
+        width="640"
+      />
+      <!-- Tablet -->
+      <source
+        srcset="
+          ./img/register/webp/register-tablet.webp    1x,
+          ./img/register/webp/register-tablet@2x.webp 2x
+        "
+        media="(min-width: 768px)"
+        type="image/webp"
+        width="340"
+      />
+
+      <source
+        srcset="
+          ./img/register/register-jpeg/register-tablet.jpg    1x,
+          ./img/register/register-jpeg/register-tablet@2x.jpg 2x
+        "
+        media="(min-width: 768px)"
+        width="340"
+      />
+      <!-- Mobile -->
+      <source
+        srcset="
+          ./img/register/webp/register-mobile.webp    1x,
+          ./img/register/webp/register-mobile@2x.webp 2x
+        "
+        media="(max-width: 767px)"
+        type="image/webp"
+        width="335"
+      />
+
+      <img
+        srcset="./img/register/register-jpeg/register-mobile@2x.jpg 2x"
+        src="./img/register/register-jpeg/register-mobile.jpg"
+        width="335"
+        alt="Person handing event badge"
+      />
+    </picture>
   </div>
 </section>

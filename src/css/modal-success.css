@@ -1,114 +1,84 @@
 .backdrop-success {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.25);
-    z-index: 9999;
-    pointer-events: none;
-    opacity: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.25);
+  z-index: 9999;
+  pointer-events: none;
+  opacity: 0;
 }
 
 .backdrop-success.is-open-now {
-    opacity: 1;
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .modal-success {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 16px;
-    padding: 56px 20px;
-    min-width: 335px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 16px;
+  padding: 56px 20px;
+  min-width: 335px;
 
-    background: var(--color-scheme-1-background);
+  background: var(--color-scheme-1-background);
 
-    @media screen and (min-width: 768px) {
-        width: 640px;
-        height: 695px;
-        padding: 64px 34px;
-    }
+  @media screen and (min-width: 768px) {
+    width: 640px;
+    height: 695px;
+    padding: 64px 34px;
+  }
 
-    @media screen and (min-width: 1440px) {
-        width: 768px;
-        height: 668px;
-        padding: 64px;
-    }
+  @media screen and (min-width: 1440px) {
+    width: 768px;
+    height: 668px;
+    padding: 64px;
+  }
 }
 
 .succes-close-btn {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    line-height: 0;
-    border: none;
-    background: none;
-    padding: 0;
-    stroke: var(--color-scheme-1-text);
-    pointer-events: auto;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  line-height: 0;
+  border: none;
+  background: none;
+  padding: 0;
+  stroke: var(--color-scheme-1-text);
 }
 
 .modal-success-title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.2;
-    letter-spacing: -0.01em;
-    text-align: center;
-    color: var(--color-scheme-1-text);
-    margin-top: 16px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: var(--color-scheme-1-text);
+  margin-top: 16px;
 }
 
 .modal-success-text {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.5;
-    text-align: center;
-    color: var(--color-scheme-1-text);
-    margin-top: 16px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: center;
+  color: var(--color-scheme-1-text);
+  margin-top: 16px;
 }
 
-.succes-btn {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    color: var(--color-white);
-    text-align: center;
-   
-    padding: 10px 24px;
-    min-width: 295px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 16px;
-    border: none;
+.modal-success .big-blue-btn {
+  min-width: 295px;
+  margin: 16px auto 0;
+  pointer-events: auto;
 
-    border-radius: 6px;
-    background: var(--color-governor-bay);
-
-    @media screen and (min-width: 768px) {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: row;
-        min-width: 192px;
-    }
-}
-
-.succes-btn:hover,
-.succes-btn:focus {
-    border: 1px solid var(--color-governor-bay);
-    background: var(--color-white);
-    color: var(--color-scheme-1-text);
-}
-
-.succes-btn:active {
-    background: var(--color-governor-bay-lighter);
-    color: var(--color-scheme-1-text);
-}
-
-.succes-btn:disabled {
-    background: var(--color-governor-bay-lighter);
-    color: var(--color-white);
-    border: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    max-width: 192px;
+  }
 }

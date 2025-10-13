@@ -7,8 +7,10 @@
     padding-bottom: 48px;
   }
   .footer-logo {
+    display: block;
     fill: var(--color-white);
     text-align: center;
+    cursor: pointer;
   }
 
   .footer-list {

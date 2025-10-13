@@ -1,0 +1,23 @@
+<picture>
+  <source
+    srcset="
+      ./img/testimonials/avatar-{=$count}.webp    1x,
+      ./img/testimonials/avatar-{=$count}@2x.webp 2x
+    "
+    type="image/webp"
+  />
+  <source
+    srcset="
+      ./img/testimonials/avatar-{=$count}.jpg    1x,
+      ./img/testimonials/avatar-{=$count}@2x.jpg 2x
+    "
+    type="image/jpg"
+  />
+  <img
+    class="testimonials-avatar"
+    src="./img/testimonials/avatar-{=$count}.jpg"
+    alt="{=$alt}"
+    width="56"
+    height="56"
+  />
+</picture>
