@@ -1,8 +1,8 @@
-const burgerEl = document.querySelector(".burger-button")
-const closeBtnEl = document.querySelector(".mobile-menu-close-btn")
-const mobMenuEl = document.querySelector(".mobile-menu")
+const burgerEl = document.querySelector('.burger-button');
+const closeBtnEl = document.querySelector('.mobile-menu-close-btn');
+const mobMenuEl = document.querySelector('.mobile-menu');
 const bodyEl = document.body;
-
+const menuLinks = document.querySelectorAll('.menu-nav-link');
 
 // burgerEl.addEventListener("click", () => {
 //     modal.classList.toggle("is-open")
@@ -12,18 +12,24 @@ const bodyEl = document.body;
 //     modal.classList.toggle("is-open")
 // })
 
+burgerEl.addEventListener('click', toggleModal);
+closeBtnEl.addEventListener('click', toggleModal);
 
-
-burgerEl.addEventListener('click', toggleModal) 
-closeBtnEl.addEventListener('click', toggleModal)
+menuLinks.forEach(link => {
+  link.addEventListener('click', closeMenu);
+});
 
 function toggleModal() {
-    mobMenuEl.classList.toggle("is-open")
+  mobMenuEl.classList.toggle('is-open');
 
-     if (mobMenuEl.classList.contains('is-open')) {
+  if (mobMenuEl.classList.contains('is-open')) {
     bodyEl.style.overflow = 'hidden';
   } else {
     bodyEl.style.overflow = 'visible';
   }
 }
 
+function closeMenu() {
+  mobMenuEl.classList.remove('is-open');
+  bodyEl.style.overflow = 'visible';
+}
