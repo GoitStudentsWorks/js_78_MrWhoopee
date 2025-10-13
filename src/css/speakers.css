@@ -19,36 +19,28 @@
     flex-wrap: wrap;
     column-gap: 32px;
   }
+
+  @media screen and (min-width: 1440px) {
+    row-gap: 64px;
+  }
 }
 
 .speaker-info-wrapper {
-  margin-bottom: 16px;
-}
-
-@media screen and (min-width: 1440px) {
-  .speaker-info-wrapper {
-    display: flex;
-    flex-direction: column;
+  @media screen and (min-width: 1440px) {
     flex-grow: 1;
   }
 }
 
-@media screen and (min-width: 1440px) {
-  .speaker {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-}
+.speaker {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 
-@media screen and (min-width: 768px) {
-  .speaker {
+  @media screen and (min-width: 768px) {
     flex-basis: calc((100% - 32px) / 2);
   }
-}
 
-@media screen and (min-width: 1440px) {
-  .speaker {
+  @media screen and (min-width: 1440px) {
     flex-basis: calc((100% - 96px) / 4);
   }
 }
@@ -60,31 +52,6 @@
 
 .speaker-desc {
   font-size: 16px;
-  margin-top: auto;
-}
-
-.mobile-br {
-  display: inline;
-
-  @media screen and (min-width: 768px) {
-    display: none;
-  }
-}
-
-.mobile-tablet-br {
-  display: inline;
-
-  @media screen and (min-width: 1440px) {
-    display: none;
-  }
-}
-
-.desktop-br {
-  display: none;
-
-  @media screen and (min-width: 1440px) {
-    display: inline;
-  }
 }
 
 .social-list {
