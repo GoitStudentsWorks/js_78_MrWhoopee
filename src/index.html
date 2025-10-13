@@ -3,34 +3,53 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Cache-Control" content="max-age=31536000" />
     <meta
       name="description"
       content="Educational Conference 2025 — inspiring talks, workshops, and networking for teachers and education professionals."
     />
-
     <title>EduConf</title>
+
+    <!-- Preload favicon -->
+    <link rel="preload" href="./img/favicon.png" as="image" />
     <link rel="icon" type="image/x-icon" href="./img/favicon.png" />
+
+    <!-- Normalize CSS (preloaded for faster rendering) -->
     <link
-      rel="stylesheet"
+      rel="preload"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
-      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+      as="style"
+      onload="this.rel='stylesheet'"
     />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      />
+    </noscript>
+
+    <!-- Fonts optimization -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Teachers:ital,wght@0,400..800;1,400..800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@400;700&family=Raleway:wght@400;700&family=Roboto:wght@400;700&family=Teachers:wght@400;700&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Styles preload -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Teachers:ital,wght@0,400..800;1,400..800&display=swap"
-      rel="stylesheet"
+      rel="preload"
+      href="./css/styles.css"
+      as="style"
+      onload="this.rel='stylesheet'"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <noscript><link rel="stylesheet" href="./css/styles.css" /></noscript>
   </head>
+
   <body>
+    <!-- HEADER -->
     <load src="./partials/header.html" />
+
     <main>
       <load src="./partials/hero.html" />
       <load src="./partials/about.html" />
@@ -41,11 +60,13 @@
       <load src="./partials/register.html" />
     </main>
 
+    <!-- FOOTER & MODALS -->
     <load src="./partials/footer.html" />
     <load src="./partials/mobile-menu.html" />
     <load src="./partials/modal-success.html" />
 
-    <script type="module" src="./js/menu.js"></script>
-    <script type="module" src="./js/success.js"></script>
+    <!-- Lazy-load scripts -->
+    <script defer type="module" src="./js/menu.js"></script>
+    <script defer type="module" src="./js/success.js"></script>
   </body>
 </html>
