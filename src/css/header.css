@@ -100,28 +100,6 @@
 
   .page-header .blue-link-button {
     display: block;
-    text-align: center;
-
-    border-radius: 6px;
-    border: 1px solid var(--color-governor-bay);
-    background: var(--color-governor-bay);
-    color: var(--color-white);
-
-    margin: auto 0;
-    padding: 10px 24px;
-    min-width: 192px;
-
-    transition: all 250ms linear;
-  }
-
-  .page-header .blue-link-button:hover,
-  .page-header .blue-link-button:focus {
-    background: transparent;
-    color: var(--color-scheme-1-text);
-  }
-
-  .page-header .blue-link-button:active {
-    background: var(--color-governor-bay-lighter);
   }
 
   .burger-button {
