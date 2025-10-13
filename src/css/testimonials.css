@@ -1,10 +1,3 @@
-/* .container {
-  max-width: 1158px;
-  margin: 0 auto;
-  padding: 0 16px;
-  width: 100%;
-} */
-
 .testimonials {
   text-align: left;
 }
@@ -25,8 +18,7 @@
 .testimonials-subtitle {
   font-size: 18px;
 }
-.testimonials-list-container {
-}
+
 .testimonials-list {
   display: flex;
   flex-direction: column;
@@ -45,9 +37,6 @@
   }
 }
 
-.testimonials-item {
-}
-
 .testimonials-text {
   font-size: 20px;
   margin-bottom: 16px;
@@ -62,38 +51,3 @@
 .testimonials-name {
   font-weight: 600;
 }
-
-/* Br Br */ /* Br Br */ /* Br Br */ /* Br Br */ /* Br Br */ /* Br Br */
-
-/* По умолчанию скрываем все переносы */
-.br-mobile,
-.br-tablet,
-.br-desktop {
-  display: none;
-}
-
-/* 👇 Показываем перенос только на мобилке */
-@media (max-width: 767px) {
-  .br-mobile {
-    display: inline;
-  }
-}
-
-/* 👇 А этот — только на планшете */
-@media (min-width: 768px) and (max-width: 1439px) {
-  .br-tablet {
-    display: inline;
-  }
-}
-
-/* 👇 На десктопе — без переносов */
-@media (min-width: 1440px) {
-  .br-mobile,
-  .br-tablet {
-    display: none;
-  }
-  .br-desktop {
-    display: inline;
-  }
-}
-/* Br Br */ /* Br Br */ /* Br Br */ /* Br Br */ /* Br Br */ /* Br Br */
