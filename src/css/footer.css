@@ -6,16 +6,21 @@
     padding-top: 48px;
     padding-bottom: 48px;
   }
+  .footer-nav {
+    display: flex;
+    flex-direction: column;
+  }
   .footer-logo {
     display: block;
     fill: var(--color-white);
     text-align: center;
     cursor: pointer;
+    max-width: 196px;
+    margin: 0 auto;
   }
 
   .footer-list {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 32px;
@@ -23,11 +28,13 @@
     font-size: 16px;
     line-height: 1.5;
     color: var(--color-scheme-2-text);
-    /* text-align: center; */
-    margin-bottom: 80px;
+    margin-bottom: 64px;
   }
   .footer-list-link {
+    display: inline-block;
     color: var(--color-scheme-2-text);
+    padding-bottom: 16px;
+    padding-top: 16px;
   }
   .footer-line {
     border: 2px solid var(--color-scheme-2-border);
