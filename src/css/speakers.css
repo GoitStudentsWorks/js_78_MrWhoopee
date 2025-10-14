@@ -10,8 +10,6 @@
 .speakers-list {
   display: flex;
   flex-direction: column;
-  align-items: stretch;
-  justify-content: center;
   row-gap: 32px;
 
   @media screen and (min-width: 768px) {
@@ -27,6 +25,8 @@
 
 .speaker-info-wrapper {
   @media screen and (min-width: 1440px) {
+    display: flex;
+    flex-direction: column;
     flex-grow: 1;
   }
 }
@@ -48,6 +48,7 @@
 .speaker-position {
   font-size: 18px;
   margin-bottom: 16px;
+  flex-grow: 1;
 }
 
 .speaker-desc {
