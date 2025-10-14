@@ -36,7 +36,29 @@
     color: var(--color-scheme-2-text);
     padding-bottom: 16px;
     padding-top: 16px;
+    position: relative;
   }
+
+  .footer-list-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color: var(--color-scheme-1-text);
+    border-radius: 2px;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 250ms linear, background-color 250ms linear;
+  }
+
+  .footer-list-link:hover::after,
+  .footer-list-link:focus::after {
+    transform: scaleX(1);
+    background-color: var(--color-scheme-2-border);
+  }
+
   .footer-line {
     border: 2px solid var(--color-scheme-2-border);
     height: 0px;
