@@ -3,6 +3,7 @@ const closeBtnEl = document.querySelector('.mobile-menu-close-btn');
 const mobMenuEl = document.querySelector('.mobile-menu');
 const bodyEl = document.body;
 const menuLinks = document.querySelectorAll('.menu-nav-link');
+const registerBtn = document.getElementById('mobile-menu-register-btn');
 
 // burgerEl.addEventListener("click", () => {
 //     modal.classList.toggle("is-open")
@@ -14,6 +15,7 @@ const menuLinks = document.querySelectorAll('.menu-nav-link');
 
 burgerEl.addEventListener('click', toggleModal);
 closeBtnEl.addEventListener('click', toggleModal);
+registerBtn.addEventListener('click', closeMenu);
 
 menuLinks.forEach(link => {
   link.addEventListener('click', closeMenu);
