@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/team-project-B-78-EduConf/",
+    "build": "vite build --base=/js_78_MrWhoopee/",
     "preview": "vite preview"
   },
   "devDependencies": {
